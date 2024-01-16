@@ -147,3 +147,7 @@ footer {
     margin-bottom: 5px; /* Adjust the margin as needed */
     margin-top: -5px;
 }
+a:active,
+a:focus {
+    outline: none;
+}
