@@ -1,0 +1,149 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 20vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    background-color: #fff;
+    padding: 0px;
+    border-radius: 5px;
+    min-height: 50vh;
+    text-align: center;
+    width: 300px;
+}
+
+.logo {
+    width: 200px;
+    margin: 0 auto;
+    
+    display: block;
+}
+
+.input-field {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid black;
+    border-radius: 4px;
+    outline: none;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2B8DFC;
+    margin-top: 10px; /* Adjusted margin */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 5px; /* Adjusted margin */
+}
+.or-separator {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+hr {
+    flex-grow: 1;
+    border: 0.5px solid #ccc;
+}
+
+.facebook-login {
+    color: #385185;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+}
+
+.forgot-password {
+    color: #3897f0;
+    text-decoration: none;
+    display: block;
+    margin-top: 5px; /* Adjusted margin */
+    text-align: right;
+}
+
+.signup-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0vh;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 260px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.signup-button {
+    color: #1b6fbe;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.language-selection {
+    margin-bottom: 10px;
+}
+
+.language-select {
+    height: 50px;
+    font-size: 14px;
+    border: none;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.facebook-login {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #0096FF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Add a hover effect */
+.facebook-login:hover {
+    background-color: #304d8a;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 0px;
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+.footer-image {
+    width: 50px; /* Adjust the size as needed */
+    height: auto;
+    margin-top: 5px;  /* Adjust the margin as needed */
+}
+
+.custom-h6 {
+    font-family: ' Arial', sans-serif; /* Replace 'Your Custom Font' with your desired font-family */
+    margin-bottom: 5px; /* Adjust the margin as needed */
+    margin-top: -5px;
+}

