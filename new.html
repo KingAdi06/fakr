@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Page</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading spinner -->
+    <div class="loading-spinner"></div>
+
+    <!-- Your page content goes here -->
+    <div class="content">
+        <h1 class="welcome-message">You are now safe</h1>
+        <!-- Add your content here -->
+        <div class="icon-container">
+            <i class="fas fa-check"></i>
+        </div>
+    </div>
+
+    <script>
+        // Simulate page load completion after a delay (for demonstration purposes)
+        setTimeout(() => {
+            document.querySelector('.loading-spinner').style.display = 'none';
+            document.querySelector('.content').style.display = 'block';
+        }, 3000); // Adjust the delay as needed
+    </script>
+</body>
+</html>
